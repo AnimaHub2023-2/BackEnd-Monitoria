@@ -10,8 +10,7 @@ import java.util.List;
 
 @RequestMapping("/instituicao")
 @RestController
-public class
-InstituicaoController {
+public class InstituicaoController {
 
     @Autowired
     private InstituicaoService instituicaoService;

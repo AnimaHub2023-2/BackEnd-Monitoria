@@ -56,7 +56,7 @@ public class InstituicaoServiceImpl implements InstituicaoService {
     public String deletarInstituicao(Long idInstituicao) {
         try {
             instituicaoRepository.deleteById(idInstituicao);
-            return "Instituição deleta com sucesso";
+            return "Instituição deletado com sucesso";
         } catch (Exception e) {
             return e.getMessage();
         }

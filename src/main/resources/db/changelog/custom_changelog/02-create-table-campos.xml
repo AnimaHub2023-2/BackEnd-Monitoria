@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="01" author="Davi Pereira">
+
+        <createTable tableName="CAMPOS">
+            <column name="ID" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="ID_INSTITUICAO" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="UNIDADE" type="varchar2(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="IMG_CAMPOS" type="varchar2(300)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="RESPONSAVEL" type="varchar2(150)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <createSequence incrementBy="1"
+                        cacheSize="0"
+                        maxValue="999999999999999999999999999"
+                        minValue="1"
+                        sequenceName="SEQ_CAMPOS"
+                        startValue="1"/>
+    </changeSet>
+
+
+</databaseChangeLog>

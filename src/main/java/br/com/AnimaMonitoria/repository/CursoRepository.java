@@ -1,9 +1,9 @@
 package br.com.AnimaMonitoria.repository;
 
-import br.com.AnimaMonitoria.model.Campos;
+import br.com.AnimaMonitoria.model.Curso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CamposRepository extends JpaRepository<Campos, Long> {
+public interface CursoRepository extends JpaRepository<Curso, Long> {
 }

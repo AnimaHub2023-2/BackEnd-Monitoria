@@ -8,5 +8,6 @@
     <include file="/custom_changelog/01-create-table-instituicao.xml" relativeToChangelogFile="true"/>
     <include file="/custom_changelog/02-create-table-campos.xml" relativeToChangelogFile="true"/>
     <include file="/custom_changelog/03-create-table-curso.xml" relativeToChangelogFile="true"/>
+    <include file="/custom_changelog/04-create-table-monitoria.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
